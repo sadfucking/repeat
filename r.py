@@ -85,7 +85,7 @@ def main():
                 if msg == "-доступ":
                     dostup.remove(user)
                     sync_access()
-                    send(f"[id{user}|Пользователю убран доступ.")
+                    send(f"[id{user}|Пользователю] убран доступ.")
             elif msg.startswith(remote_prefix) and from_id != my_id:
                 send(event.text[2:])
 
